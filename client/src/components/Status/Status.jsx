@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import StatusButton from "../StatusButtons/StatusButton";
 import SearchLogo from "../../assets/search.png";
 import "../Status/Status.css";
 
@@ -22,7 +23,7 @@ const Status = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div><StatusButton/></div>
     </div>
   );
 };
