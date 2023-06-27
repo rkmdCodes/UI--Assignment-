@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Header/Header';
+import Status from '../Status/Status';
 import Footer from '../Footer/Footer';
 import '../Header/Header.css';
 
@@ -7,6 +8,7 @@ import '../Header/Header.css';
   return (
     <div >
       <Header/>
+      <Status/>
       <Footer/>
     </div>
   )

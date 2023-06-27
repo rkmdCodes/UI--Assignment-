@@ -1,0 +1,38 @@
+.status-container {
+  display: flex;
+  align-self: center;
+  width: 70vw;
+  height: 76vh;
+  background-color: white;
+  margin-top: 2rem;
+  margin-left: 7rem;
+}
+
+.status-container--status{
+   font-weight: 400;
+}
+.status-container--status h3{
+   padding-left:2rem;
+}
+
+.status-container--application-no {
+    margin-top: 2rem;
+    height: 4rem;
+    background-color: #f2f7fd;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .status-container--application-no p {
+    font-size: 12px;
+    padding-left: 2rem;
+  }
+.logo{
+    
+    height: 5rem;
+    margin-left: 1rem; /* Adjust as needed */
+    margin-top:1.4rem;
+    transform: translateY(-50%);
+    
+}
