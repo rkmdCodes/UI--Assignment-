@@ -9,7 +9,7 @@ import '../Header/Header.css';
     <div >
       <Header/>
       <Status/>
-     
+      <Footer/>
     </div>
   )
 }
