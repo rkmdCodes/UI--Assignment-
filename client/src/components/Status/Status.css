@@ -8,9 +8,9 @@
 .status-container {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   height: 81vh;
- 
+  border:2px solid magenta;
   background-color: white;
   margin-top: 2rem;
 }

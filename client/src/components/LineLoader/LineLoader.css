@@ -2,7 +2,7 @@
   display: flex;
   margin-left: 0%;
   margin-top: 0%;
-  height: 4px;
+  height: 2px;
   width: 100%;
   align-self: left;
   border-radius: 2px;
@@ -15,7 +15,7 @@
 }
 
 .horizontal-line2 {
-  height: 4px;
+  height: 2px;
   width: 25%;
   margin-top: 12px;
   display: flex;
@@ -28,4 +28,40 @@
   to {
     background-size: 100% 100%;
   }
+}
+
+
+@media (max-width: 650px) {
+ 
+  .horizontal-line {
+    display: block;
+    margin-left: 0%;
+    margin-top: 0%;
+    width: 2px;
+    height: 100%;
+    align-self: flex-start;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #56b793 0%, #56b793);
+    color: #56b793;
+  }
+  
+  .animate {
+    animation: l 2s linear forwards;
+  }
+  
+  .horizontal-line2 {
+    width: 2px;
+    height: 25%;
+    margin-left: 12px;
+    display: block;
+    align-self: flex-start;
+    background-color: #8a8a96;
+  }
+  
+  @keyframes l {
+    to {
+      background-size: 100% 100%;
+    }
+  }
+ 
 }

@@ -4,16 +4,16 @@
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
-
+    margin-left: 0;;
 }
 
 .footer-button-active
 {
  background-color: #00B1F2;
- width:22rem;
+ width:27%;
  height:3rem;
  color:white;
- margin-left: 4rem;
+ margin-left: 14vw;
  text-align: center;
  border-radius:22px;
  font-size:15px;
@@ -41,3 +41,21 @@ display:none;}
 .footer-button-active:focus {
     outline: none;
   }
+
+
+  @media (max-width: 650px) {
+    .footer-container{
+        margin-top: 0;
+     flex-direction: column;
+     align-self: center;
+     gap:1.5rem;
+     
+    }
+    .footer-button-active{
+        align-self: center;
+        width: 80%;
+        margin-left: 0;
+    }
+   
+  }
+  

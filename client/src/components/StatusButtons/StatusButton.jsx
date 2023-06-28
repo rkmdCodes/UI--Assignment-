@@ -9,7 +9,7 @@ import LineLoader from "../LineLoader/LineLoader";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import "./StatusButton.css";
 
-const StatusButton = ({clicked}) => {
+const StatusButton = ({clicked,nextStatus}) => {
   return (
     <>
       <div className="status-button-container">
@@ -25,8 +25,8 @@ const StatusButton = ({clicked}) => {
               />
             </div>
             <div className="data-container">
-              <p>
-                Application Submission.
+              <p style={nextStatus===false?{'color':'#00B1F2'}:{'color':'black'}}>
+                {nextStatus===false ? "Application Submission" : "Application  Submitted"}
                 <br />
                 
               </p>
@@ -42,7 +42,11 @@ const StatusButton = ({clicked}) => {
             </div>
 
             <div>
-              <p>Application Verification</p>
+              <p style={nextStatus===true?{'color':'#00B1F2'}:{'color':'black'}}>
+              {nextStatus===false ? "Application Verification" : "Verification in Process"}
+              
+              
+              </p>
             </div>
           </div>
           <div className="status-button">
@@ -55,7 +59,7 @@ const StatusButton = ({clicked}) => {
             </div>
 
             <div>
-              <p>Application Approval</p>
+              <p style={{'color':'grey'}}>Application       Approval</p>
             </div>
           </div>
           <div className="status-button">
@@ -68,7 +72,7 @@ const StatusButton = ({clicked}) => {
             </div>
 
             <div>
-              <p>Physical Card Delivery</p>
+              <p style={{'color':'grey'}}>Physical Card Delivery</p>
             </div>
           </div>
         </div>

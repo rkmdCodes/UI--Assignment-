@@ -12,7 +12,6 @@ const ProgressBar = ({clicked}) => {
 
   const [toggle , setToggle] = useState(false);
 
-
     function toggleState() {
       setToggle((prevToggle) => !prevToggle);
     }
@@ -24,7 +23,7 @@ const ProgressBar = ({clicked}) => {
 
   return (
     <div className="progress-bar-container">
-      {toggle===false?<img src={BlueIcon} alt="blue icon"/>:<img className="svg-tick-container" src={GreenTick} alt="tick-svg" />}
+      {clicked===false?<img src={BlueIcon} alt="blue icon"/>:<img className="svg-tick-container" src={GreenTick} alt="tick-svg" />}
       <LineLoader clicked={clicked}  />
        { toggle===false?<img src={Ellipse} alt="blue icon"/> :<img src={BlueIcon} alt="blue icon"/>}
       <LineLoader clicked={false} />
