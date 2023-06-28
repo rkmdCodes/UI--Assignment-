@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from "react";
 import "../Footer/Footer.css";
 
-const Footer = () => {
+const Footer = ({clicked,setClicked}) => {
   const [applicationCompleted, setApplicationCompleted] = useState(false);
  
  
 
   return (
     <div className="footer-container">
-      {!applicationCompleted && (
+      {!clicked && (
         <button
-          onClick={() => setApplicationCompleted(true)}
+          onClick={() => setClicked(true)}
           className="footer-button-active"
         >
           Complete Application Now
         </button>
       )}
       <button
-        onClick={() => setApplicationCompleted(false)}
+        onClick={() => setClicked(false)}
         className={
-          applicationCompleted === true
+          clicked === true
             ? "footer-button-active"
             : "footer-button-inactive"
         }

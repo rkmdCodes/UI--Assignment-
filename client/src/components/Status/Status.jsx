@@ -3,12 +3,13 @@ import StatusButton from "../StatusButtons/StatusButton";
 import SearchLogo from "../../assets/search.png";
 import "../Status/Status.css";
 
-const Status = () => {
+const Status = ({clicked}) => {
   const [currentStatus, setCurrentStatus] = useState("Application Submission");
 
   return (
-    <div className="status-container">
-      <div>
+    <div class="status-root">
+    <div className="status-container" >
+      <div >
         <div className="status-container--status">
           <h3>Current Status : {currentStatus}</h3>
           <div className="status-container--application-no">
@@ -23,7 +24,8 @@ const Status = () => {
           </div>
         </div>
       </div>
-      <div><StatusButton/></div>
+      <StatusButton clicked={clicked}/>
+    </div>
     </div>
   );
 };

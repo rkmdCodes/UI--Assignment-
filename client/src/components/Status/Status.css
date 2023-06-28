@@ -1,28 +1,33 @@
+
+.status-root{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .status-container {
   display: flex;
   flex-direction: column;
-  align-self: center;
-  width: 70vw;
+  width: 70%;
   height: 81vh;
+ 
   background-color: white;
   margin-top: 2rem;
-  margin-left: 4rem;
-  margin-left: 3rem;
-  margin-top: 3rem;
 }
 
 .status-container--status{
+ 
    font-weight: 400;
+   align-self: center;
 }
 .status-container--status h3{
    padding-left:1.5rem;
 }
 
 .status-container--application-no {
-    margin-top: 2rem;
     height: 4rem;
     background-color: #f2f7fd;
-    width: 70vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -34,7 +39,7 @@
 .logo{
     
     height: 5rem;
-    margin-left: 0.5rem; /* Adjust as needed */
+    margin-left: 0.5rem; 
     margin-top:1.4rem;
     transform: translateY(-50%);
     
