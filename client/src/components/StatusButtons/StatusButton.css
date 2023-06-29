@@ -57,7 +57,12 @@
 }
 
 .mobile-ad {
-  display: none;
+  
+}
+
+.mobile-ad img{
+  height: 0px;
+  width: 0px;
 }
 
 .subHeading {
@@ -149,7 +154,7 @@
   }
 
   .mobile-ad {
-    display: flex !important;
+    display: flex;
     align-self: center;
     justify-content: center;
 
@@ -160,7 +165,8 @@
   }
   .mobile-ad img {
     max-width: 100%;
-    height: auto;
+    height: 15rem;
+    width: 35rem;
     border-radius: 28px;
     box-shadow: 0px 6px 10px 0px #d5d5ea, 0px -6px 10px 0px #d5d5ea,
       6px 0px 10px 0px #d5d5ea, -6px 0px 10px 0px #d5d5ea;
