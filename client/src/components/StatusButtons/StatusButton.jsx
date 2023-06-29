@@ -5,15 +5,16 @@ import VerificationGrey from "../../assets/varification-grey.png";
 import Approved from "../../assets/Approved.png";
 import PhysicalCard from "../../assets/physical-card.png";
 import ProgressBarAs from "../ProgressBar/ProgressBarAS";
-import AdImg from "../../assets/mobile-add.png";
+import AdImg from "../../assets/adImage.png";
 import LineLoader from "../LineLoader/LineLoader";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import "./StatusButton.css";
 
 const StatusButton = ({ clicked, nextStatus }) => {
   return (
-    <>
-      <div className="status-button-container">
+    <div className="status-button-container">
+    <div className="root-root-container">
+      <div className="root-container">
         {clicked === false ? (
           <ProgressBarAs clicked={clicked} />
         ) : (
@@ -86,11 +87,11 @@ const StatusButton = ({ clicked, nextStatus }) => {
               >
                 {nextStatus === false
                   ? ""
-                  : "Your application is under policy check and varification"}
+                  : "Your application is under policy check and verification"}
               </p>
             </div>
           </div>
-          <div className="status-button">
+          <div className="status-button" >
             <div>
               <img
                 className="image-container"
@@ -103,7 +104,7 @@ const StatusButton = ({ clicked, nextStatus }) => {
               <p className="inactive-heading">Application Approval</p>
             </div>
           </div>
-          <div className="status-button">
+          <div className="status-button" >
             <div>
               <img
                 className="image-container"
@@ -117,8 +118,12 @@ const StatusButton = ({ clicked, nextStatus }) => {
             </div>
           </div>
         </div>
+        </div>
+        <div className="mobile-ad">
+          <img  src={AdImg}/>
       </div>
-    </>
+      </div>
+    </div>
   );
 };
 

@@ -4,7 +4,6 @@ import SearchLogo from "../../assets/search.png";
 import "../Status/Status.css";
 
 const Status = ({ clicked }) => {
-  const [currentStatus, setCurrentStatus] = useState("Application Submission");
   const [nextStatus, setNextStatus] = useState(false);
 
   useEffect(() => {
@@ -19,7 +18,7 @@ const Status = ({ clicked }) => {
   console.log("clicked is ", clicked, " next status is ", nextStatus);
 
   return (
-    <div class="status-root">
+    <div className="status-root">
       <div className="status-container">
         <div>
           <div className="status-container--status">

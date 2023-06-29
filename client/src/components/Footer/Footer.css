@@ -1,10 +1,10 @@
 .footer-container{
-    height:5%;
+    height:3%;
     width: 100vw;
     background-color: #F2F7FD;
     display: flex;
     align-items: center;
-    margin-left: 0;;
+       
 }
 
 .footer-button-active
