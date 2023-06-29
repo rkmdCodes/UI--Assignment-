@@ -1,24 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import GreenTick from "../../assets/tick.svg";
 import BlueIcon from "../../assets/blueCircle.png";
 import LineLoader from "../LineLoader/LineLoader";
 import Ellipse from "../../assets/ellipse.png";
 import "../ProgressBar/ProgressBar.css";
-import { useState } from "react";
 
 const ProgressBar = ({ clicked }) => {
   const [toggle, setToggle] = useState(false);
 
-  function toggleState() {
-    setToggle((prevToggle) => !prevToggle);
-  }
+  useEffect(() => {
+    if (clicked) {
+      const timer = setTimeout(() => {
+        setToggle((prevToggle) => !prevToggle);
+      }, 2000);
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [clicked]);
 
-  if (clicked) {
-    setTimeout(toggleState, 2000);
-  }
-
-  console.log('progress bar re rendring');
-  console.log('clicked is ',clicked);;
+  console.log("progress bar re-rendering");
+  console.log("clicked is ", clicked);
 
   return (
     <div className="progress-bar-container">
