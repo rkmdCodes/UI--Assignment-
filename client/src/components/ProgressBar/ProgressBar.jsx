@@ -17,6 +17,9 @@ const ProgressBar = ({ clicked }) => {
     setTimeout(toggleState, 2000);
   }
 
+  console.log('progress bar re rendring');
+  console.log('clicked is ',clicked);;
+
   return (
     <div className="progress-bar-container">
       {clicked === false ? (

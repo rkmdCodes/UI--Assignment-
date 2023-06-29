@@ -15,7 +15,6 @@ const Status = ({ clicked }) => {
     else setNextStatus(false);
   }, [clicked]);
 
-  console.log("clicked is ", clicked, " next status is ", nextStatus);
 
   return (
     <div className="status-root">
