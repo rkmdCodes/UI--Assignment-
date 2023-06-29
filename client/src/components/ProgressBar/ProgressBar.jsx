@@ -19,9 +19,6 @@ const ProgressBar = ({ clicked }) => {
     }
   }, [clicked]);
 
-  console.log("progress bar re-rendering");
-  console.log("clicked is ", clicked);
-
   return (
     <div className="progress-bar-container">
       {clicked === false ? (
