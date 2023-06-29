@@ -23,13 +23,13 @@ const ProgressBar = ({clicked}) => {
 
   return (
     <div className="progress-bar-container">
-      {clicked===false?<img src={BlueIcon} alt="blue icon"/>:<img className="svg-tick-container" src={GreenTick} alt="tick-svg" />}
+      {clicked===false?<img className="status-icon" src={BlueIcon} alt="blue icon"/>:<img className="svg-tick-container" src={GreenTick} alt="tick-svg" />}
       <LineLoader clicked={clicked}  />
-       { toggle===false?<img src={Ellipse} alt="blue icon"/> :<img src={BlueIcon} alt="blue icon"/>}
+       { toggle===false?<img className="status-icon" src={Ellipse} alt="blue icon"/> :<img className="status-icon" src={BlueIcon} alt="blue icon"/>}
       <LineLoader clicked={false} />
-     <img src={Ellipse} alt="blue icon"/>
+     <img className="status-icon" src={Ellipse} alt="blue icon"/>
       <LineLoader clicked={false} />
-      <img src={Ellipse} alt="blue icon"/>
+      <img className="status-icon" src={Ellipse} alt="blue icon"/>
     </div>
   );
 };

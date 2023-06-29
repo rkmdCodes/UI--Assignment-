@@ -8,13 +8,13 @@ import "../ProgressBar/ProgressBar.css";
 const ProgressBarAs = () => {
   return (
     <div className="progress-bar-container">
-      <img src={BlueIcon} alt="blue icon" />
+      <img className="status-icon" src={BlueIcon} alt="blue icon" />
       <LineLoader />
-      <img src={Ellipse} alt="blue icon" />
+      <img className="status-icon" src={Ellipse} alt="blue icon" />
       <LineLoader class="" />
-      <img src={Ellipse} alt="blue icon" />
+      <img className="status-icon" src={Ellipse} alt="blue icon" />
       <LineLoader />
-      <img src={Ellipse} alt="blue icon" />
+      <img className="status-icon" src={Ellipse} alt="blue icon" />
     </div>
   );
 };

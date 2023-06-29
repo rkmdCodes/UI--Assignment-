@@ -10,13 +10,14 @@
   flex-direction: column;
   width: 80%;
   height: 81vh;
-  border:2px solid magenta;
+  /* border:2px solid magenta; */
   background-color: white;
   margin-top: 2rem;
+  transition: 0.4s ease ease-in; 
 }
 
 .status-container--status{
- 
+  transition: 0.4s ease ease-in; 
    font-weight: 400;
    align-self: center;
 }
@@ -45,17 +46,32 @@
     
 }
 
+
+
 @media (max-width: 650px) {
   .status-container{
-    height:90vh;
+    height:50%;
     width:100vw;
     margin: 0;
+    transition: 0.4s ease ease-in; 
   }
   .status-container--application-no
-  {
+  { height: 5rem;
     width: 100vw;
-  } 
+  }
+  .status-container--application-no p {
+    font-size: 14px;
+    padding-left: 1.4rem;
+  }
+  .status-heading{
+  font-size: 14px;
+  padding-left: 8px;
+  }
   .logo{
     display: none;
+  }
+  .application-no{
+    font-size: 11px !important;
+    color:grey;
   }
 }

@@ -5,6 +5,7 @@
   flex-direction: column;
   width: 90%;
   height: 19rem;
+  /* border:2px solid magenta; */
   gap:2rem;
   margin-top: 4rem;
   border-radius: 18px;
@@ -15,8 +16,8 @@
 
 .image-container {
   margin: 0;
-  height: 95%;
-  width: 100%;
+  /* height: 95%;
+  width: 100%; */
 }
 
 .image-container2 {
@@ -28,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-self: center;
+  /* border:2px solid blue; */
   width: 100%;
   gap:1rem;
 }
@@ -37,6 +39,7 @@
   width: 20%;
   flex-direction: column;
   align-items: center;
+  /* border: 2px solid black; */
   text-align: center;
   margin-right: 0.7rem;
 }
@@ -47,51 +50,6 @@
 
 .mobile-ad {
   display: none;
-}
-
-@media (max-width: 650px) {
-  .status-button {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 22%;
-    font-size: 8px;
-    
-  }
-
-  .status-button-container {
-    
-    flex-direction: row;
-    height: 35rem;
-    width:60%;
-    gap:2rem;
-    border:2px solid green;
-    margin: 2rem;
-  }
-
-  .horizontal-line {
-    height: 80%;
-    width: 2%;
-    align-self: center;
-    display: flex;
-    color: #000100;
-  }
-
-  .buttons-container {
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 22rem;
-    width: 20%;
-    border:2px solid red;
-    gap: 5%;
-  }
-
-
-  .mobile-ad {
-    display: flex;
-    height: 10rem;
-    width: 20rem;
-  }
 }
 
 .subHeading{
@@ -121,6 +79,87 @@
   color:black;
   transition: color 0.5s ease;
 }
+
+@media (max-width: 650px) {
+  .status-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 8px;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+
+  .status-button-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    gap:1rem;
+    /* border:2px solid green; */
+  margin: 2rem;
+  }
+  .image-container {
+    margin: 0;
+    height: 85%;
+    /* border:2px solid red; */
+    width: 100%;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 8%;
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top:1rem;
+    
+  }
+ 
+  .active-heading{
+    color: #00B1F2;
+    font-size: 1rem;
+    text-align: left;
+    /* border:2px solid red; */
+    transition: color 0.5s ease;
+  }
+
+  .inactive-heading{
+    color: grey;
+    text-align: left;
+    /* border:2px solid red; */
+    font-size: 1rem;
+    transition: color 0.5 ease;
+  }
+
+  .mobile-ad {
+    display: flex;
+    height: 10rem;
+    width: 20rem;
+  }
+}
+
+.subHeading{
+  font-size: 10px;
+  opacity: 0;
+}
+
+
+/* 
+
+
+.sub-text-active{
+  font-size: 10px;
+  color:grey;
+  transition: color 0.5s ease;
+ 
+}
+
+.sub-text-inactive{
+  font-size: 10px;
+  color:black;
+  transition: color 0.5s ease;
+} */
 
 
 hr {

@@ -31,23 +31,17 @@ const StatusButton = ({ clicked, nextStatus }) => {
             <div className="data-container">
               <p
                 className={
-                  nextStatus === false
-                    ? "active-heading"
-                    : "inactive-heading" 
+                  nextStatus === false ? "active-heading" : "inactive-heading"
                 }
               >
                 {nextStatus === false
                   ? "Application Submission"
                   : "Application  Submitted"}
-                
               </p>
               <p
-              className={
-                nextStatus === true
-                  ? "sub-text-active"
-                  : "sub-text-inactive"
-              }
-               
+                className={
+                  nextStatus === true ? "sub-text-active" : "sub-text-inactive"
+                }
               >
                 {nextStatus === false
                   ? "Your Application Submission is in progress"
@@ -57,21 +51,19 @@ const StatusButton = ({ clicked, nextStatus }) => {
           </div>
           <div className="status-button">
             <div>
-             {
-              nextStatus === false ?  
-               <img
-                className="image-container"
-                src={VerificationGrey}
-                alt="Application Verification"
-              />
-              :
-              <img
-                className="image-container"
-                src={Verification}
-                alt="Application Verification"
-              />
-
-             }
+              {nextStatus === false ? (
+                <img
+                  className="image-container"
+                  src={VerificationGrey}
+                  alt="Application Verification"
+                />
+              ) : (
+                <img
+                  className="image-container"
+                  src={Verification}
+                  alt="Application Verification"
+                />
+              )}
             </div>
 
             <div>
@@ -85,11 +77,11 @@ const StatusButton = ({ clicked, nextStatus }) => {
                   : "Verification in Process"}
               </p>
               <p
-              style={
-                nextStatus === true
-                  ? { transition: "opacity 0.5s ease", opacity: 1 }
-                  : { transition: "opacity 0.5s ease", opacity: 0 }
-              }
+                style={
+                  nextStatus === true
+                    ? { transition: "opacity 0.5s ease", opacity: 1 }
+                    : { transition: "opacity 0.5s ease", opacity: 0 }
+                }
                 className="subHeading"
               >
                 {nextStatus === false
@@ -108,7 +100,7 @@ const StatusButton = ({ clicked, nextStatus }) => {
             </div>
 
             <div>
-              <p style={{ color: "grey" }}>Application Approval</p>
+              <p className="inactive-heading">Application Approval</p>
             </div>
           </div>
           <div className="status-button">
@@ -121,7 +113,7 @@ const StatusButton = ({ clicked, nextStatus }) => {
             </div>
 
             <div>
-              <p style={{ color: "grey" }}>Physical Card Delivery</p>
+              <p className="inactive-heading">Physical Card Delivery</p>
             </div>
           </div>
         </div>
