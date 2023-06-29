@@ -149,7 +149,7 @@
   }
 
   .mobile-ad {
-    display: flex;
+    display: flex !important;
     align-self: center;
     justify-content: center;
 
